@@ -66,7 +66,7 @@ io.on("connection", (socket) => {
 app.use(express.static('public'));
 
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 server.listen(PORT, () => {
     console.log(`Server is running on port: ` + PORT);
